@@ -1,1 +1,21 @@
-monitor.yml
+name: Website Monitor
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Проверка каждые 30 минут
+
+jobs:
+  check_website:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check if website is up
+      run: |
+        url="http://chinaautozap.ru"
+        response=$(curl --write-out "%{http_code}" --silent --output /dev/null $url)
+        if [ "$response" -ne 200 ]; then
+          echo "Website is down!"
+          exit 1
+        else
+          echo "Website is up."
+        fi
