@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChinaAutoZap - Запчасти для китайских автомобилей</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<!-- Верхняя панель (Header) -->
+<header class="bg-black text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold">ChinaAutoZap.ru</a>
+        <nav>
+            <a href="/" class="px-4">Главная</a>
+            <a href="/catalog" class="px-4">Каталог</a>
+            <a href="/contacts" class="px-4">Контакты</a>
+            <a href="/login" class="px-4">Войти</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Главный баннер -->
+<section class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4">Запчасти для китайских автомобилей</h1>
+        <p class="mb-4">Найдите оригинальные и качественные запчасти для китайских авто с доставкой по всей России</p>
+        <a href="/catalog" class="bg-red-600 text-white px-6 py-2 rounded">Перейти в каталог</a>
+    </div>
+</section>
+
+<!-- Слайдер -->
+<section class="my-8">
+    <div class="container mx-auto">
+        <div class="flex space-x-4">
+            <div class="flex-1 bg-gray-300 p-8">
+                <h2 class="text-2xl font-bold">Скидки на запчасти Chery</h2>
+                <p>Скидки до 30% на запчасти для моделей Chery.</p>
+            </div>
+            <div class="flex-1 bg-gray-300 p-8">
+                <h2 class="text-2xl font-bold">Доставка по всей России</h2>
+                <p>Быстрая доставка запчастей по всей России.</p>
+            </div>
+            <div class="flex-1 bg-gray-300 p-8">
+                <h2 class="text-2xl font-bold">Оригинальные запчасти</h2>
+                <p>Все детали имеют сертификаты качества и гарантии.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Фильтр поиска -->
+<section class="bg-white py-8">
+    <div class="container mx-auto">
+        <h2 class="text-xl font-bold mb-4">Найдите нужную запчасть</h2>
+        <div class="grid grid-cols-4 gap-4">
+            <select class="p-2 border rounded">
+                <option>Марка</option>
+                <option>Chery</option>
+                <option>Geely</option>
+                <option>Haval</option>
+                <option>BYD</option>
+            </select>
+            <select class="p-2 border rounded">
+                <option>Модель</option>
+            </select>
+            <select class="p-2 border rounded">
+                <option>Год</option>
+            </select>
+            <select class="p-2 border rounded">
+                <option>Тип детали</option>
+                <option>Двигатель</option>
+                <option>Подвеска</option>
+                <option>Кузов</option>
+            </select>
+            <button class="bg-red-600 text-white p-2 rounded">Найти</button>
+        </div>
+    </div>
+</section>
+
+<!-- Преимущества -->
+<section class="py-8 bg-gray-200">
+    <div class="container mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-4">Наши преимущества</h2>
+        <div class="flex justify-center space-x-8">
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="font-bold">Оригинальные детали</h3>
+                <p>Только проверенные и сертифицированные запчасти</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="font-bold">Быстрая доставка</h3>
+                <p>Доставка по всей России, от 2 дней</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded">
+                <h3 class="font-bold">Гарантия качества</h3>
+                <p>Гарантия на все детали</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Карточки товаров -->
+<section class="py-8">
+    <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Популярные товары</h2>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white p-4 shadow rounded">
+                <img src="https://via.placeholder.com/150" alt="Запчасть" class="w-full h-40 object-cover mb-4">
+                <h3 class="text-lg font-bold">Масляный фильтр Chery</h3>
+                <p>Цена: 1200 ₽</p>
+                <button class="bg-red-600 text-white px-4 py-2 mt-2 rounded">В корзину</button>
+            </div>
+            <div class="bg-white p-4 shadow rounded">
+                <img src="https://via.placeholder.com/150" alt="Запчасть" class="w-full h-40 object-cover mb-4">
+                <h3 class="text-lg font-bold">Тормозные колодки Geely</h3>
+                <p>Цена: 1500 ₽</p>
+                <button class="bg-red-600 text-white px-4 py-2 mt-2 rounded">В корзину</button>
+            </div>
+            <div class="bg-white p-4 shadow rounded">
+                <img src="https://via.placeholder.com/150" alt="Запчасть" class="w-full h-40 object-cover mb-4">
+                <h3 class="text-lg font-bold">Радиатор Haval</h3>
+                <p>Цена: 2200 ₽</p>
+                <button class="bg-red-600 text-white px-4 py-2 mt-2 rounded">В корзину</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Подвал -->
+<footer class="bg-black text-white py-6">
+    <div class="container mx-auto text-center">
+        <p>© 2025 ChinaAutoZap.ru — Все права защищены</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
